@@ -45,6 +45,10 @@ plugins=(git vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export PATH=$PATH:/usr/local/google/home/zyz/bin:/usr/lib/lightdm/lightdm:/usr/lib/google-golang/bin:/usr/local/buildtools/java/jdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# in mac, change this to
+# BROWSER=open
+export BROWSER=google-chrome
 
 # press v to enter edit mode with vi
 # this is very useful with vimwiki
