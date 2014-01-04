@@ -14,7 +14,6 @@ set number
 set incsearch
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 source ~/.vim/c.vim
-source /usr/share/vim/google/google.vim
 :set completeopt=longest,menuone
 
 set wildmode=longest,list
@@ -38,7 +37,6 @@ nnoremap <F7> :make <cr>
 nnoremap <F5> :!./a.out<a.txt <cr>
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
 set nowrap
-source /google/src/head/depot/google3/tools/gsearch/contrib/csearch.vim
 set clipboard=unnamedplus
 
 " cursorline settings
