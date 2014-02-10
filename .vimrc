@@ -36,7 +36,7 @@ au FileType go set makeprg=go\ build\ -o\ a.out\ %
 nnoremap <F7> :make <cr>
 nnoremap <F5> :!./a.out<a.txt <cr>
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
-set nowrap
+" set nowrap
 set clipboard=unnamedplus
 
 " cursorline settings
