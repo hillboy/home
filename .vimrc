@@ -16,6 +16,8 @@ nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 source ~/.vim/c.vim
 :set completeopt=longest,menuone
 
+imap <C-g> <ESC>
+
 set wildmode=longest,list
 
 fun! PullAndRefresh()
