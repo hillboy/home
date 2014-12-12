@@ -56,4 +56,5 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
+# Uncomment this line if there's a lot of users (like several thousands) to complete. It's really painfully slow.
 # zstyle ':completion:*' users false
