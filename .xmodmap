@@ -1,0 +1,26 @@
+remove mod1 = Alt_R
+remove Control = Control_R
+remove Control = Control_L
+remove Lock = Caps_Lock
+keysym Control_R = Super_R
+keysym Control_L = Escape
+keysym Alt_R = Control_R
+keysym Caps_Lock = Control_L
+add mod4 = Alt_R
+add control = Control_R
+add control = Control_L
+add Lock = Caps_Lock
+! to restore defaults, us
+! setxkbmap -model pc105 -layout us -option '' -option grp:alt_shift_toggle -option grp:ctrls_toggle
+!
+! remove Lock = Caps_Lock
+! keysym Escape = Caps_Lock
+! keysym Caps_Lock = Escape
+! add Lock = Caps_Lock
+
+! remove mod1 = Alt_R
+! remove Control = Control_R
+! keysym Control_R = Super_R
+! keysym Alt_R = Control_R
+! add mod4 = Alt_R
+! add control = Control_R
