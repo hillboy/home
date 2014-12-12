@@ -1,5 +1,24 @@
 filetype plugin on
+" Disable AutoComplPop.
+" let g:acp_enableAtStartup = 0
+" Use neocomplcache.
+" let g:neocomplcache_enable_at_startup = 1
+" " Use smartcase.
+" let g:neocomplcache_enable_smart_case = 1
 set ofu=syntaxcomplete#Complete
+" if !exists('g:neocomplcache_omni_patterns')
+"   let g:neocomplcache_omni_patterns = {}
+" endif
+" if !exists('g:neocomplcache_force_omni_patterns')
+"   let g:neocomplcache_force_omni_patterns = {}
+" endif
+" let g:neocomplcache_omni_patterns.php =
+"       \ '[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
+" let g:neocomplcache_omni_patterns.c =
+"       \ '[^.[:digit:] *\t]\%(\.\|->\)\%(\h\w*\)\?'
+" let g:neocomplcache_omni_patterns.cpp =
+"       \ '[^.[:digit:] *\t]\%(\.\|->\)\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
+
 let g:vimwiki_folding = "expr"
 set nocompatible
 set expandtab
@@ -100,4 +119,8 @@ let wiki_1 = {}
 let wiki_1.path = '~/vimwiki/'
 let wiki_1.html_template = '~/vimwiki_html/header.tpl'
 let wiki_1.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
-let g:vimwiki_list = [wiki_1]
+let wiki_orgmode = {}
+let wiki_orgmode.path = '~/Documents/org/git/'
+let wiki_orgmode.html_template = '~/vimwiki_html/header.tpl'
+let wiki_orgmode.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
+let g:vimwiki_list = [wiki_1, wiki_orgmode]
